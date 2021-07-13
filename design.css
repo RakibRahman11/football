@@ -49,15 +49,81 @@ header design
 /*---------------
 main body design 
 ----------------*/
-
+.champions{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    /* height: 500px; */
+    margin: 20px 10px;
+    padding-left: 100px;
+    margin: 100px 0px;
+}
 .champion{
-    width: 330px;
+    width: 250px;
     height: 300px;
     padding-left: 10px;
-    margin-top: 50px;
-    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 2px 4px rgba(206, 201, 201, 0.363);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .champion img{
-    width: 330px;
-    height: 200px;
+    width: 230px;
+    height: 140px;
+    border-radius: 7px;
+}
+
+/* table design */
+.rankings{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+table{
+    border-collapse: collapse;
+    width: 200px;
+}
+caption{
+    background-color: gold;
+}
+td, th, caption{
+    border: 1px solid black;
+    padding: 10px 50px;
+}
+
+/* video */
+.memory{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+
+
+
+/* ----------------
+footer design
+---------------- */
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+.footer-info img{
+    width: 500px;
+    padding-left: 5px;
+}
+.social-links{
+    padding-left: 40px;
+}
+.fab{
+    color: rgb(109, 101, 101);
+    transform: scale(2);
+    width: 40px;
 }
