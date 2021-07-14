@@ -53,11 +53,12 @@ header design
 /*---------------
 main body design 
 ----------------*/
+
+/* .champions team design */
 .champions{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 50px;
-    /* height: 500px; */
     margin: 20px 10px;
     padding-left: 100px;
     margin: 100px 0px;
@@ -138,7 +139,7 @@ footer design
 media query 
 -----------*/
 
-/* mobile device */
+/* mobile device(max 480px) */
 @media only screen and (max-width: 480px){
     .cover{
         grid-template-columns:repeat(1,1fr);
